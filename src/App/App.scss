@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  overscroll-behavior: none;
+}
+
+.col-2 {
+  width: 16.66%; 
+  float: left;
+  padding: 0 15px;
+}
+
+.col-4 {
+  width: 33.33%; 
+  float: left;
+  padding: 0 15px;
+}
+
+.col-6 {
+  width: 50%; 
+  float: left;
+  padding: 0 15px;
+}
+
+.col-12 {
+  width: 100%; 
+  float: left;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.padding{
+  &-top{
+    padding-top: 150px;
+  }
+  &-bottom{
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
